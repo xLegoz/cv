@@ -21,11 +21,12 @@
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
 
-\definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
-\definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{green}{HTML}{6E7F36}
+\definecolor{orange}{HTML}{E5942E}
+\definecolor{purple}{HTML}{6C357F}
+\definecolor{red}{HTML}{E03D77}
+\definecolor{blue}{HTML}{39767F}
+\definecolor{deepblue}{HTML}{4C0FDC}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -72,7 +73,7 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
@@ -82,7 +83,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{1.5cm}
   \vspace{-2\parskip}
 }
 
@@ -97,6 +98,7 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
+        deepblue\or%
         blue\or%
         red\or%
         orange\or%
@@ -151,9 +153,9 @@
 %%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{0.77cm}
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
@@ -167,6 +169,29 @@
   \end{textblock}
   \let\section\oldsection
 }
+
+%%
+%% Aside two
+%%
+
+\RequirePackage[absolute,overlay]{textpos}
+\newenvironment{asidetwo}{%
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{0.2cm}
+  \let\oldsection\section
+  \renewcommand{\section}[1]{
+    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+  }
+  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{flushright}
+  \obeycr
+}{%
+  \restorecr
+  \end{flushright}
+  \end{textblock}
+  \let\section\oldsection
+}
+
 
 %%%%%%%%%%%%%%%%
 % Bibliography %
@@ -196,7 +221,7 @@
     \printfield{year}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.0\baselineskip}
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
@@ -214,7 +239,7 @@
     \printlist{location}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.0\baselineskip}
 }
 
 \DeclareBibliographyDriver{misc}{%
@@ -234,7 +259,7 @@
     \printlist{location}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.0\baselineskip}
 }
 
 \DeclareBibliographyDriver{report}{%
@@ -252,7 +277,7 @@
     \printfield{year}%
     \newunit%
   }
-  \par\vspace{0.3\baselineskip}
+  \par\vspace{0.0\baselineskip}
 }
 
 \DeclareNameFormat{author}{%
@@ -281,5 +306,5 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}

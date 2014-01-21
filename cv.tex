@@ -1,20 +1,24 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
+\usepackage{multicol}
+
+%command for emphasising points/keys among body
+\newcommand{\imp}[1] {{\em #1}}
 
 \begin{document}
-\header{joey}{pereira}
+\header{Joey}{Pereira}
        {software developer}
 
 % Note.... Try out tex gyre heros vs helvetica (as DEFAULT fonts)
 % In the aside, each new line forces a line break
 \begin{aside}
-  \section{conact}
+  \section{contact}
     226 343.9309
-    \href{mailto:joey.pereira@uwaterloo.ca}{joey@joeypereira.com}
+    \href{mailto:joey@joeypereira.com}{joey@joeypereira.com}
+    ~
     \href{http://joeypereira.com}{joeypereira.com}
     \href{http://www.github.com/xlegoz}{github.com/xlegoz}
-  \section{programming}
+  \section{languages}
 	C
 	Java
 	Javascript
@@ -22,87 +26,164 @@
 	Actionscript
 	HaXe
 	Haskell
+	Erlang
+	Python
 	Racket
-	Bash
-  \section{databases}
-    MySQL
-    MongoDB
+	Bash	
   \section{tools}
 	Git
+    MySQL
     \LaTeX
+  \section{reverse engineering}
+  	.NET Reflector
+  	Java Decompiler
+  	Java Bytecode Editor
+  	Ollydbg
+  	Smali
   \section{interests}
   	distributed systems
-  	machine learning
+  	reverse engineering
   	operating systems
+  	machine learning
   	formal languages
   	compilers and assemblers
   	~
-  	entrepreneurship   	
+  	entrepreneurship
+  	fishing and sailing
+  	new tech
 \end{aside}
+
+
+\section{about me}
+I currently an undergraduate Computer Science student at the University of Waterloo, and have a passion for theoretical computer science, software development solutions and the innovation and creation of new ideas leading to entrepreneurial opportunities.
+\section{qualifications}
+\begin{multicols}{3}
+ avid leader \\ enjoys challenging problems \\ experienced with small teams \\ passion for learning \\ adaptable to any environment \\ \em{loves} computer science
+\end{multicols}
+
 
 \section{education}
 
 \begin{entrylist}
   \entry
     {2013-2018}
-    {Candidate for Bachelor's of Computer Science}
-    {University of Waterloo}
-	{Projected minor in combinatorics and optimization and management studies}
+    {Bachelor's of Computer Science, University of Waterloo}
+    {Waterloo, Canada}
+	{Projected minor in combinatorics and optimization and management studies \\
+	\hspace*{4mm}based on interests of entrepreneurship and problem solving \\
+	Highly involved in campus volunteering, events and collaboration groups \\ Cumulative average of \imp{84.2\%}, and taken advanced level computer science}
+	
   \entry
-  	{2009-2013}
+  	{07-09 2013}
+  	{Startup Engineering Course}
+  	{Stanford - Coursera (Online)}
+  	{Learning about what it takes to develop an idea from a business perspective \\
+  	Discover methods behind innovative work}
+  	
+  \entry
+  	{01-02 2014}
+  	{Web Development Course}
+  	{Udacity (Online)}
+  	{Building applications on Google App Engine, using Python \\
+  	Learning various techniques for handling web data, and about the internet}
+  	
+  \entry
+  	{01-02 2014}
   	{Ontario Secondary School Diploma}
   	{Centre Wellington District High School}
-    {}
+    {Highly involved with leading several clubs and educating fellow peers with knowledge outside of curriculum \\
+    }
 \end{entrylist}
 
 \section{experience}
 
 \begin{entrylist}
   \entry
-    {06–08 2012}
-    {Katerberg Framing}
-    {Framing Carpenter}
-    {Small \textbf{team collaboration} to achieve \textbf{tight deadlines} \\
-    Worked with various tools of the trade to optimally complete tasks}
-  \entry
   	{2011-2012}
   	{J\&J Tech}
   	{Co-founder and Head Technician}
-  	{Investigated starting a small business with a partner \\
-	Carried out computer repairs and maintenance \\
-	Underwent management and organizational responsibilities}
+  	{Investigated starting a \imp{small business} with a partner \\
+	\imp{Management skills} gained through advertising and customer handling \\
+	Underwent management and organizational \imp{responsibilities} \\
+	Enhanced understanding of business operation and  \textbf{TODO} }
   \entry
     {06–08 2011}
     {PlanetCPU}
     {Service Assistant (Co-op)}
-    {Assisting customers in person and over the phone, diagnosing problems in tight time constraints \\
-	Problem solving in hardware and software system diagnoses and repairs \\
-	Working in a small business, undergoing marketing and business tasks}
+    {Diagnosing both software and hardware under \imp{tight time constraints} \\	Working as a \imp{team to solve problems} as well as \imp{marketing and business tasks} \\
+    Learned how to be a \imp{key contributor} to a small team and the business itself}
+  \entry
+    {06–08 2012}
+    {Katerberg Framing}
+    {Framing Carpenter}
+    {Small \imp{team collaboration} to achieve \imp{tight deadlines} \\
+    Worked with various tools of the trade to \imp{optimally complete tasks}  
+   }
   \entry
   	{11 2013}
   	{David Cheriton School of Computer Science Recruitment}
   	{Recruitment Volunteer}
-	{University of Waterloo Fall Open House event for prospective students \\
-  	Set up technical systems and miscellaneous equipment for the event \\
-	Assist prospective students in discovering what computer science is about}
+	{Volunteered for University of Waterloo Fall events for prospective students \\
+  	Set up \imp{technical systems} and miscellaneous equipment for the event \\
+	Assist prospective students in \imp{discovering computer science} as a passion}
   \entry
   	{2012-2013}
   	{Elora Road Christian Fellowship}
   	{Technical Organizer}
-	{Solve various problems under tight time constraints and under pressure \\
-	Facilitating sound and operation of a small worship team}
+	{Solve various \imp{problems under pressure} to maintain event quality\\
+	\imp{Facilitating} sound and operation of a small worship team}
   	
 
 \end{entrylist}
+
+\newpage
+
+\begin{asidetwo}  	
+	\section{Joey Pereira}
+	\section{contact}
+    226 343.9309
+    \href{mailto:joey@joeypereira.com}{joey@joeypereira.com}
+    ~
+    \href{http://joeypereira.com}{joeypereira.com}
+    \href{http://www.github.com/xlegoz}{github.com/xlegoz}
+\end{asidetwo}
+
+
+
 
 \section{projects}
 
 \begin{entrylist}
   \entry
     {2013}
-    {JoOS}
-    {\href{http://github.com/xlegoz/JoOS}{github repository}}
-    {}
+    {JoOS \textsf{- Bare Bones Operating System \em{- ASM, C}}}
+    {\href{http://github.com/xlegoz/JoOS}{github.com/xlegoz/JoOS}}
+    {Created in passion for learning more about  \\
+    Involves assembly, multiboot  standard and interrupt handling \\
+    Goal of discovering more within operating system theory}
+    
+  \entry
+  	{2013}
+  	{jjNES \textsf{- Nintendo Entertainment System Emulator \em{- Java}}}
+  	{Still in research}
+  	{Aimed to create a better understanding of computer architecture \\
+  	Gathering information on how components interact within the system \\
+  	Involving an understanding of machine code and a model of memory}
+  	
+  \entry
+  	{2013}
+  	{Coldeas \textsf{- Collaborative Classroom Space \em{- Java}}}
+  	{Still in research}
+  	{Discovering solutions to problems such as: \\
+  	\hspace{70mm}
+  	 Developing unique data structures undergoing delta compression, coordinate transformations, and node linking \\
+  	 Designing a server structure to handle active updates and conflict management }
+  
+  \entry
+  	{2013}
+  	{Mobile Door Locking \textsf{- Multi-platform door locker \em{- Arduino, Java}}}
+  	{Still in invention}
+  	{}
 \end{entrylist}
 
 \section{achievements}
@@ -131,21 +212,15 @@
 
 \end{entrylist}
 
-\section{activities}
-
-\begin{entrylist}
-\end{entrylist}
-
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+\section{misc. relevant activities}
+reverse engineering:\\
+  Knowledge of obfuscated code and various obfuscation techniques\\
+    Experience with various tools for the following technologies;
+    \begin{multicols}{2}
+    Java Bytecode \\
+    Dalvik Bytecode (Android) \\
+    Common Intermediate Language (.NET) \\
+    Assembly
+    \end{multicols}
 
 \end{document}
