@@ -170,14 +170,14 @@
   \let\section\oldsection
 }
 
-%%
+%%%%%%%%%%%%
 %% Aside two
-%%
+%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
 \newenvironment{asidetwo}{%
 \setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{0.2cm}
+\setlength{\TPVertModule}{0.13cm}
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
