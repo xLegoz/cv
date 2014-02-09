@@ -1,3 +1,8 @@
+# CV
+If you would like to check it out, either take a look at the LaTeX source in the repository or the [PDF][cv]. Contact through any messaging platform linked around here is accepted and will likely be received in reasonable time.
+
+[cv]: https://github.com/xLegoz/cv/blob/master/cv.pdf?raw=true
+
 # About
 This is a LaTeX created, latest version of my CV. It is typesetted in Helvetica, uses TikZ for the header and XeTeX and fontspec for Helvetica Neue.
 
