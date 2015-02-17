@@ -1,6 +1,7 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 \usepackage{multicol}
+\usepackage{setspace}
 
 %command for emphasising points/keys among body
 \newcommand{\imp}[1] {{\em #1}}
@@ -9,9 +10,9 @@
 
 \begin{document}
 \header{Joey}{Pereira}
-       {software developer}
+       {co-op student}
 
-% note: try out tex gyre heros vs helvetica (as DEFAULT fonts)
+
 \begin{aside}
   \section{contact}
     226 343.9309
@@ -19,29 +20,13 @@
     ~
     \href{http://joeypereira.com}{joeypereira.com}
     \href{http://www.github.com/xlegoz}{github.com/xlegoz}
-  \section{languages}
-  \textbf{experienced with:}
-  	Java
-  	Racket
-  	C
-  	HaXe
-  	Actionscript
-	~
-	\textbf{working knowledge:}
-	Javascript
-	Python
-  	PHP
-	Erlang
-	Bash
-  \section{tools}
-    MySQL
-    \LaTeX
-	Git
-  \section{reverse engineering tools}
-  	Java Bytecode Editor
-  	Java Decompiler
-  	.NET Reflector
-  	Ollydbg
+  \section{skills}
+  avid leader
+  adaptable
+  %enjoys challenging problems
+  %experienced with small teams
+  passion for learning
+  {\em loves} computer science
   \section{interests}
   	distributed systems
   	reverse engineering
@@ -55,135 +40,117 @@
   	fishing and sailing
   	entrepreneurship
   	new tech
+  \section{reverse engineering tools}
+  	Java Bytecode Editor
+  	Java Decompiler
+  	.NET Reflector
+  	Ollydbg  	
 \end{aside}
 
 
 \section{about me}
-I'm currently an undergraduate Computer Science student at the University of Waterloo. I have a passion for theoretical computer science, software development, and the innovation along with creation of new ideas.
+I'm currently a second year undergraduate Computer Science student in the co-op program at the University of Waterloo. I have a passion for theoretical computer science, software development, innovation, and computer security.
+
+%\section{qualifications}
+%\begin{multicols}{3}
+% avid leader \\ enjoys challenging problems \\ experienced with small teams \\ passion for learning \\ adaptable to any environment \\ {\em loves} computer science
+%\end{multicols}
+
 \section{qualifications}
-\begin{multicols}{3}
- avid leader \\ enjoys challenging problems \\ experienced with small teams \\ passion for learning \\ adaptable to any environment \\ {\em loves} computer science
-\end{multicols}
-
-\section{projects}
-
-\begin{entrylist}
-  \entry
-  	{2014}
-  	{Pi Net \textsf{- Raspberry Pi Mesh Based Network}}
-  	{Still in development}
-  	{Intentions to discover the network interaction of multiple devices over a mesh topology network and the sustainability of an intranet with all nodes}
-  \entry
-    {2013-2014}
-    {JoOS \textsf{- Bare Bones Operating System \em{- ASM, C}}}
-    {\href{http://github.com/xlegoz/JoOS}{github.com/xlegoz/JoOS}}
-    {Goal of learning more about the operating system layer and theory \\
-    Involved i386 instruction set, operation at a low level and interrupt handling}
-    
-  \entry
-  	{2013-2014}
-  	{Coldeas \textsf{- Collaborative Classroom Space \em{- Java}}}
-  	{Still in research}
-  	{Involved finding solutions to problems such as: \\
-	Designing a server structure to handle state updates and conflict management \\
-  	Utilizing data structures requiring delta compression and spatial representation}
- 
-  \entry
-  	{2013}
-  	{jjNES \textsf{- Nintendo Entertainment System Emulator \em{- Java}}}
-  	{Still in research}
-  	{Aimed to achieve a better understanding of computer architecture \\
-  	Observed models of how components interact within the NES architecture \\
-  	Involved an understanding of machine code, processor operations}
-  	 
-  
-  %\entry
-  %	{2013}
-  %	{Mobile Door Locking \textsf{- Multi-platform door locker \em{- Arduino, Java}}}
-  %	{Still in invention}
-  %	{Remotely use a system of authentication to lock a deadbolt \\
-  %	Built using the Arduino platform, utilizing various communication streams including web sockets, email and sms protocols \\
-  %	Worked with important security issues such as short-life authentication}
-\end{entrylist}
-
-
+{
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\itemindent}{0em}
+  \setlength{\leftmargin}{0em}
+\begin{itemize}
+\item Experienced with Java, Racket, C, C++, Bash, Python, Javascript, PHP, and Erlang.
+\item Proficient with Git version control, SVN, MySQL databases, and Redis databases.
+\item Knowledgeable with network protocols, computer security, and program integrity.
+\item Experienced in low level programming, operating systems, and embedded devices.
+\item Familiar with Linux, virtual machines, and systems administration.
+\item Strong team communication skills and good with customer relations.
+\end{itemize}
+}
 
 \section{experience}
-
 \begin{entrylist}
 
   \entry
     {06–08 2013}
     {Framing Carpenter}
     {Katerberg Framing}
-    {Involved in small \imp{team collaboration} to achieve \imp{tight deadlines} \\
-    Worked with various tools of the trade to \imp{optimally complete tasks}  
+    {Involved in small \imp{team collaboration} to achieve \imp{tight deadlines}. \\
+    Formulated ways to \imp{optimally complete tasks}   with tools of the trade.
    }
 
   \entry
   	{2012-2013}
   	{Co-founder and Head Technician}
   	{J\&J Tech}
-  	{Investigated starting a \imp{small business} with a partner \\
-	Gained \imp{management skills} through advertising and customer handling \\
-	Underwent management and organizational \imp{responsibilities}}
+  	{Investigated starting a \imp{small business} with a partner. \\
+	Gained \imp{management skills} through advertising and customer handling. \\
+	Underwent management and organizational \imp{responsibilities}.}
 	
   \entry
     {06–08 2012}
     {Service Assistant}
     {PlanetCPU}
-    {Diagnosed software and hardware problems under \imp{tight time constraints} \\	Worked as a \imp{team to complete tasks}, as well as run a market campaign \\
-    Learned how to be a \imp{key contributor} to a small team and to the business}
-\textbf{\emph{Volunteering}} \\    
+    {Diagnosed software and hardware problems under \imp{tight time constraints}. \\
+    Worked as a \imp{team to complete tasks}, as well as run a market campaign. \\
+    Learned how to be a \imp{key contributor} to a small team and to the business.}
+\textbf{\emph{Volunteering}} \\
   \entry
   	{2013-2014}
   	{Recruitment Ambassador}
   	{David Cheriton School of Computer Science, uWaterloo}
-	{Volunteered in University of Waterloo events for prospective students \\
-  	Set up \imp{technical equipment}  for the event \\
-	Help prospective students in \imp{discovering computer science} as a passion}
+	{Volunteered in University of Waterloo events for prospective students. \\
+  	Set up \imp{technical equipment}  for the events. \\
+	Guided prospective students to \imp{discovering computer science} as a passion.}
   \entry
   	{2012-2013}
   	{Technical Organizer}
   	{Elora Road Christian Fellowship}
-	{Solved various \imp{technical problems under pressure} to maintain event quality\\
-	\imp{Facilitated} a small worship team and the operation of equipment}
+	{Solved various \imp{technical problems under pressure} to maintain event quality. \\
+	\imp{Facilitated} a small worship team and the operation of equipment.}
   	
 
 \end{entrylist}
-
-\newpage
 
 \section{education}
 
 \begin{entrylist}
   \entry
     {2013-2018}
-    {Bachelor's of Computer Science, University of Waterloo}
-    {Waterloo, Canada}
-	{Projected minor in management studies based on interests of entrepreneurship \\
-	First year representative on Math Endowment Fund Funding Council \\
-%	Highly involved in campus volunteering and clubs \\
- Cumulative average of \imp{85\%}}
+    {Candidate for Bachelor of Computer Science}
+    {University of Waterloo}
+	{Projected minor in management studies based on interests of entrepreneurship. \\
+	First year representative on Math Endowment Fund Funding Council. \\
+	Cumulative average grade of \imp{85\%}. Student of the co-op program.
+	\\ %Relevant courses: Designing Functional Programs, Elementary Algorithm Design and Data Abstraction, Logic and Computation, Object-Oriented Software Development, Computer Organization and Design.
+ }
+ 
+ \entry
+  	{01-02 2014}
+  	{Web Development Course}
+  	{Udacity (Online)}
+  	{Built applications on Google App Engine using Python. }
 	
   \entry
   	{07-09 2013}
   	{Startup Engineering Course}
   	{Stanford - Coursera (Online)}
-  	{Learned about what it takes to develop an idea from a business perspective \\
-  	Introduced to node.js and using PaaS}
+  	{Learned about what it takes to develop an idea from a business perspective. \\
+  	Learned node.js while utilizing Platform as a Service.}
   	
   \entry
-  	{01-02 2014}
-  	{Web Development Course}
-  	{Udacity (Online)}
-  	{Built applications on Google App Engine using Python }
-  \entry
-  	{01-02 2014}
+  	{2009-2013}
   	{Ontario Secondary School Diploma}
   	{Centre Wellington District High School}
-    {Involved in school community, having led several clubs teaching peers knowledge outside of curriculum and creating initiatives to learn with collaboration}
+    {Led several clubs including a club that taught peers knowledge outside of curriculum and created initiatives to learn with collaboration.}
 \end{entrylist}
+
+\newpage 
 
 \begin{asidetwo}  	
 	\section{Joey Pereira}
@@ -196,7 +163,40 @@ I'm currently an undergraduate Computer Science student at the University of Wat
 \end{asidetwo}
 
 
+\section{projects}
 
+\begin{entrylist}
+  \entry
+  	{2014}
+  	{Pi Net \textsf{- Raspberry Pi Mesh Based Network}}
+  	{Still in development}
+  	{Intentions to discover the network interaction of multiple devices over a mesh topology network and the sustainability of an intra-net with all nodes.}
+  \entry
+    {2013-2014}
+    {JoOS \textsf{- Bare Bones Operating System \em{- NASM, C}}}
+    {\href{http://github.com/xlegoz/JoOS}{github.com/xlegoz/JoOS}}
+    {Goal of learning more about the operating system layer and theory. \\
+    Involved i386 instruction set, operation at a low level and interrupt handling.}
+
+ 
+  \entry
+  	{2013}
+  	{jjNES \textsf{- Nintendo Entertainment System Emulator \em{- Java}}}
+  	{Still in research}
+  	{Aimed to achieve a better understanding of computer architecture. \\
+  	Observed models of how components interact within the NES architecture. \\
+  	Built a rudimentary machine code interpreter for 6502 processor.}
+  	 
+ 
+  \entry
+  	{2013}
+  	{Mobile Door Locking \textsf{- Multi-platform door locker \em{- Arduino, Java}}}
+  	{Still in invention}
+  	{Project to remotely control a deadbolt through mobile devices \\
+  	Built using the Arduino platform and with a Java server. \\
+  	Utilized various communication streams including email and SMS messages. \\
+  	Detailed important security issues such as short-lived authentication.}
+\end{entrylist}
 
 
 
@@ -207,19 +207,19 @@ I'm currently an undergraduate Computer Science student at the University of Wat
   	{09 2013}
   	{Google Ship Wars Hackathon \textsf{\em{Top 10}}}
   	{Google, Waterloo}
-  	{Developed an AI script which challenged fellow competitors \\
-  	 Acquainted with new tools and an API under a heavy time constraint}
+  	{Developed an AI script which challenged fellow competitors. \\
+  	 Acquainted with new tools and an API under a heavy time constraint.}
   \entry
   	{02 2013}
   	{Educational Computing Organization of Ontario Programming Contest \textsf{\em{Semi-finalist}}}
   	{University of Western Ontario}
-  	{Directed a team in a highly team-oriented problem solving environment \\
-  	 Utilized critical thinking to translate solutions to code}
+  	{Directed a team in a highly team-oriented problem solving environment. \\
+  	 Utilized critical thinking to translate solutions to code.}
   \entry
 	{04 2013}  	
   	{Canadian Computing Contest Certificate of Distinction \textsf{\em{Top 100}}}
   	{University of Waterloo}
-  	{Created efficient algorithms to problems by unconventional thinking}
+  	{Created efficient algorithms to problems by unconventional thinking.}
   \entry
   	{06 2013}
   	{Mathematical Merit Award}
@@ -234,9 +234,18 @@ I'm currently an undergraduate Computer Science student at the University of Wat
 \end{entrylist}
 
 \section{relevant activities}
-{\bf reverse engineering: }\\
-Driven from a passion to understand the workings of software and what drives a security focus \hspace*{5mm} in the development cycle, as well as to discover code structure post-compiling \\
-Knowledge of obfuscation and encryption methods for retaining integrity \\
-Experience decompiling and analyzing programs, in particular malicious software
+{\bf reverse engineering: }
+{
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\itemindent}{0em}
+  \setlength{\leftmargin}{0em}
+\begin{itemize}
+\item Driven from a passion to understand the workings of software and what drives a security focus in the development cycle, as well as to discover code structure post-compiling
+\item Knowledge of obfuscation and encryption methods for retaining integrity
+\item Experience decompiling and analyzing programs, in particular malicious software
+\end{itemize}
+}
 
 \end{document}
